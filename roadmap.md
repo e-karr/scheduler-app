@@ -26,6 +26,8 @@ kickball-scheduler/
 
 Instead of one large script, you will break your code into modular files. This allows you to swap algorithms while keeping validation the same.
 
+- generator_lambda: The entry point. It receives a JSON like {"algorithm": "weighted", "teams": [...]}
+
 # Phase 2: AWS Serverless Infrastructure
 
 You will move from local execution to the cloud using these specific services:
