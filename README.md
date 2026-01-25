@@ -79,5 +79,6 @@ STATUS: GOOD: Balanced matchups. The weighting is clearly working.
   - Choose schedule algorithm
   - Reveal schedule week by week, matchup by matchup, or all at once
   - Save schedule generation history
+  - View final schedule by week or by team
 - CICD
 - Hosted in AWS
