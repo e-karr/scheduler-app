@@ -1,0 +1,8 @@
+[run]
+source = 
+    generator_lambda
+    history_lambda
+omit = 
+    */tests/*
+    venv/*
+    __init__.py
