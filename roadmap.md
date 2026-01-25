@@ -93,3 +93,10 @@ This automates your work so that every time you git push, your site updates.
     - Zips the Python files and uses aws lambda update-function-code to deploy.
     - https://www.youtube.com/watch?v=H4xbYKPjvbs
     - https://www.youtube.com/watch?v=H4xbYKPjvbs
+
+# Resources
+- The Boto3 Documentation: This is the bible for Python on AWS. Look specifically for the S3.Client section to handle your JSON uploads and downloads.
+
+- Angular.io/guide: Focus on the Reactive Forms section. It’s the standard way to handle the dynamic "add/remove team" inputs you’re planning.
+
+- Pytest "Getting Started": Their documentation on "fixtures" will be key for passing sample team data into your algorithm tests.
