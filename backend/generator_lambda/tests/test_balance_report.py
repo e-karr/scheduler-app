@@ -30,3 +30,6 @@ def test_calc_weekly_averages(sample_schedule, expected_week_diffs_dict):
     result = _calc_weekly_averages(sample_schedule)
 
     assert result == expected_week_diffs_dict
+
+def test_workflow():
+    assert 2 ==1
