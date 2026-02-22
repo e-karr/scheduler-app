@@ -31,11 +31,14 @@ class Game:
     def __post_init__(self):
         """
         Calculate the rank difference between the teams
+        and create a matchup id
         """
         self.rank_diff = abs(self.team_a.rank - self.team_b.rank)
+        self._matchup_id = tuple(sorted([self.team_a.name.lower(), self.team_b.name.lower()]))
 
     def __eq__(self, other):
-        game_one_teams = sorted([self.team_a.name, self.team_b.name], key=str.lower)
-        game_two_teams = sorted([other.team_a.name, other.team_b.name], key=str.lower)
 
-        return game_one_teams == game_two_teams
+        return isinstance(other, Game) and self._matchup_id == other._matchup_id
+    
+    def __hash__(self) -> int:
+        return hash(self._matchup_id)
