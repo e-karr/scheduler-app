@@ -20,6 +20,6 @@ class Team:
 
     def __eq__(self, other):
         return self.name.lower() == other.name.lower()
-    
+
     def __hash__(self) -> int:
         return hash(self.name.lower())
