@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 
-@dataclass
+@dataclass()
 class Team:
     """
     A dataclass to store team name and rank.
@@ -20,3 +20,6 @@ class Team:
 
     def __eq__(self, other):
         return self.name.lower() == other.name.lower()
+
+    def __hash__(self) -> int:
+        return hash(self.name.lower())
